@@ -1,0 +1,7 @@
+server:
+  port: 9090
+
+user:
+  name: ywj
+  age: 30
+  password: 123456
