@@ -1,5 +1,7 @@
 server:
   port: 9090
+  database:
+    link: mysql+pymysql://admin:12345678@127.0.0.1:3306/bookstore
 
 user:
   name: ywj

@@ -10,7 +10,10 @@ def get_user_name():
 
 def get_password():
     """
-    get config user name
+    get config user password
     :return: config user name  in yaml
     """
     return current_app.config['user']['password']
+
+def get_db_link():
+    return current_app.config['server']['database']['link']

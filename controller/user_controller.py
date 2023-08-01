@@ -1,6 +1,7 @@
-from flask import jsonify, current_app, request
+from flask import jsonify, request
 from . import api
 from config import user_config
+from service import user_service
 
 
 @api.route('/hello-config', methods=['GET'])
@@ -20,4 +21,5 @@ def hello_config():
 
 @api.route("/hello-database", methods=['GET'])
 def hello_database():
-    return "null"
+    account = user_service.get_account_by_id(int(request.args.get('id')))
+    return jsonify(account)

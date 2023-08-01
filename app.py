@@ -1,8 +1,8 @@
 from flask import Flask
 from controller.user_controller import api
 from config import load_config_to_app
-
 app = Flask(__name__)
+
 app.register_blueprint(api)
 load_config_to_app(app)
 
