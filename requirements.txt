@@ -4,3 +4,4 @@ SQLAlchemy==2.0.19
 PyYAML==6.0.1
 pymysql==1.1.0
 cryptograph==41.0.2
+requests==2.31.0
